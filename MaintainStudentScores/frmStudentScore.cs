@@ -21,8 +21,15 @@ namespace MaintainStudentScores
         {
             Form addNewStudent = new frmAddNewStudent();
             addNewStudent.ShowDialog();
-            lbxStudents.Items.Clear();
-            AddToListbox();
+            //lbxStudents.Items.Clear();
+            //AddToListbox();
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            frmUpdateStudentScores updateStudent = new frmUpdateStudentScores();
+            updateStudent.ShowDialog();
+
         }
     }
 }

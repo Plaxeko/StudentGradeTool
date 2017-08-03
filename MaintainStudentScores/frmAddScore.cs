@@ -10,17 +10,16 @@ using System.Windows.Forms;
 
 namespace MaintainStudentScores
 {
-    public partial class frmAddNewStudent : Form
+    public partial class frmAddScore : Form
     {
-        public frmAddNewStudent()
+        public frmAddScore()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void frmAddScore_Load(object sender, EventArgs e)
         {
-            frmAddScore addScore = new frmAddScore();
-            addScore.ShowDialog();
+            
         }
     }
 }
