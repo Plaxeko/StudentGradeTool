@@ -125,6 +125,7 @@
             this.button4.TabIndex = 9;
             this.button4.Text = "&Cancel";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // frmAddNewStudent
             // 
@@ -142,7 +143,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "frmAddNewStudent";
-            this.Text = "AddNewStudent";
+            this.Text = "Add New Student";
             this.ResumeLayout(false);
             this.PerformLayout();
 

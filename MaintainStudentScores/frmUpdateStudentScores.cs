@@ -28,5 +28,15 @@ namespace MaintainStudentScores
             frmUpdateScore updateScore = new frmUpdateScore();
             updateScore.ShowDialog();
         }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

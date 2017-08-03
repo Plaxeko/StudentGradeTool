@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lbxStudents = new System.Windows.Forms.ListBox();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
@@ -39,6 +39,7 @@
             this.txtTotal = new System.Windows.Forms.TextBox();
             this.txtCount = new System.Windows.Forms.TextBox();
             this.txtAvg = new System.Windows.Forms.TextBox();
+            this.btnClose = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -50,13 +51,13 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Students:";
             // 
-            // listBox1
+            // lbxStudents
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(12, 21);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(269, 173);
-            this.listBox1.TabIndex = 1;
+            this.lbxStudents.FormattingEnabled = true;
+            this.lbxStudents.Location = new System.Drawing.Point(12, 21);
+            this.lbxStudents.Name = "lbxStudents";
+            this.lbxStudents.Size = new System.Drawing.Size(269, 173);
+            this.lbxStudents.TabIndex = 1;
             // 
             // btnAdd
             // 
@@ -64,7 +65,7 @@
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 23);
             this.btnAdd.TabIndex = 2;
-            this.btnAdd.Text = "Add";
+            this.btnAdd.Text = "Add New";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
@@ -138,11 +139,22 @@
             this.txtAvg.Size = new System.Drawing.Size(46, 20);
             this.txtAvg.TabIndex = 10;
             // 
+            // btnClose
+            // 
+            this.btnClose.Location = new System.Drawing.Point(308, 285);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(75, 23);
+            this.btnClose.TabIndex = 11;
+            this.btnClose.Text = "&Close";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // frmStudentScore
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(398, 323);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.txtAvg);
             this.Controls.Add(this.txtCount);
             this.Controls.Add(this.txtTotal);
@@ -152,10 +164,11 @@
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.lbxStudents);
             this.Controls.Add(this.label1);
             this.Name = "frmStudentScore";
             this.Text = "Student Scores";
+            this.Load += new System.EventHandler(this.frmStudentScore_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -164,7 +177,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox lbxStudents;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnDelete;
@@ -174,6 +187,7 @@
         private System.Windows.Forms.TextBox txtTotal;
         private System.Windows.Forms.TextBox txtCount;
         private System.Windows.Forms.TextBox txtAvg;
+        private System.Windows.Forms.Button btnClose;
     }
 }
 

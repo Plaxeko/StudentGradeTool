@@ -51,6 +51,7 @@
             this.button1.TabIndex = 6;
             this.button1.Text = "&Cancel";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox1
             // 
@@ -78,7 +79,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Name = "frmUpdateScore";
-            this.Text = "frmUpdateScore";
+            this.Text = "Update Score";
             this.ResumeLayout(false);
             this.PerformLayout();
 
