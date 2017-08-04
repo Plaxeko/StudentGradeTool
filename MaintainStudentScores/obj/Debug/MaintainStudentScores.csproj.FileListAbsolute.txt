@@ -1,0 +1,39 @@
+c:\users\3106909413\documents\visual studio 2012\Projects\MaintainStudentScores\MaintainStudentScores\bin\Debug\MaintainStudentScores.exe.config
+c:\users\3106909413\documents\visual studio 2012\Projects\MaintainStudentScores\MaintainStudentScores\bin\Debug\MaintainStudentScores.exe
+c:\users\3106909413\documents\visual studio 2012\Projects\MaintainStudentScores\MaintainStudentScores\bin\Debug\MaintainStudentScores.pdb
+c:\users\3106909413\documents\visual studio 2012\Projects\MaintainStudentScores\MaintainStudentScores\obj\Debug\MaintainStudentScores.csprojResolveAssemblyReference.cache
+c:\users\3106909413\documents\visual studio 2012\Projects\MaintainStudentScores\MaintainStudentScores\obj\Debug\MaintainStudentScores.frmAddNewStudent.resources
+c:\users\3106909413\documents\visual studio 2012\Projects\MaintainStudentScores\MaintainStudentScores\obj\Debug\MaintainStudentScores.frmStudentScores.resources
+c:\users\3106909413\documents\visual studio 2012\Projects\MaintainStudentScores\MaintainStudentScores\obj\Debug\MaintainStudentScores.Properties.Resources.resources
+c:\users\3106909413\documents\visual studio 2012\Projects\MaintainStudentScores\MaintainStudentScores\obj\Debug\MaintainStudentScores.csproj.GenerateResource.Cache
+c:\users\3106909413\documents\visual studio 2012\Projects\MaintainStudentScores\MaintainStudentScores\obj\Debug\MaintainStudentScores.exe
+c:\users\3106909413\documents\visual studio 2012\Projects\MaintainStudentScores\MaintainStudentScores\obj\Debug\MaintainStudentScores.pdb
+C:\Users\3106909413\documents\visual studio 2012\Projects\MaintainStudentScores\MaintainStudentScores\obj\Debug\MaintainStudentScores.frmUpdateStudentScores.resources
+C:\Users\3106909413\documents\visual studio 2012\Projects\MaintainStudentScores\MaintainStudentScores\obj\Debug\MaintainStudentScores.frmAddScore.resources
+C:\Users\3106909413\documents\visual studio 2012\Projects\MaintainStudentScores\MaintainStudentScores\obj\Debug\MaintainStudentScores.frmUpdateScore.resources
+I:\DownloadsWin8\Desktopwin8\maintain-scores-assignment-master\MaintainStudentScores\bin\Debug\MaintainStudentScores.exe.config
+I:\DownloadsWin8\Desktopwin8\maintain-scores-assignment-master\MaintainStudentScores\bin\Debug\MaintainStudentScores.exe
+I:\DownloadsWin8\Desktopwin8\maintain-scores-assignment-master\MaintainStudentScores\bin\Debug\MaintainStudentScores.pdb
+I:\DownloadsWin8\Desktopwin8\maintain-scores-assignment-master\MaintainStudentScores\obj\Debug\MaintainStudentScores.csprojResolveAssemblyReference.cache
+I:\DownloadsWin8\Desktopwin8\maintain-scores-assignment-master\MaintainStudentScores\obj\Debug\MaintainStudentScores.frmAddNewStudent.resources
+I:\DownloadsWin8\Desktopwin8\maintain-scores-assignment-master\MaintainStudentScores\obj\Debug\MaintainStudentScores.frmAddScore.resources
+I:\DownloadsWin8\Desktopwin8\maintain-scores-assignment-master\MaintainStudentScores\obj\Debug\MaintainStudentScores.frmStudentScores.resources
+I:\DownloadsWin8\Desktopwin8\maintain-scores-assignment-master\MaintainStudentScores\obj\Debug\MaintainStudentScores.Properties.Resources.resources
+I:\DownloadsWin8\Desktopwin8\maintain-scores-assignment-master\MaintainStudentScores\obj\Debug\MaintainStudentScores.frmUpdateScore.resources
+I:\DownloadsWin8\Desktopwin8\maintain-scores-assignment-master\MaintainStudentScores\obj\Debug\MaintainStudentScores.frmUpdateStudentScores.resources
+I:\DownloadsWin8\Desktopwin8\maintain-scores-assignment-master\MaintainStudentScores\obj\Debug\MaintainStudentScores.csproj.GenerateResource.Cache
+I:\DownloadsWin8\Desktopwin8\maintain-scores-assignment-master\MaintainStudentScores\obj\Debug\MaintainStudentScores.exe
+I:\DownloadsWin8\Desktopwin8\maintain-scores-assignment-master\MaintainStudentScores\obj\Debug\MaintainStudentScores.pdb
+i:\documentswin8\visual studio 2017\Projects\MaintainStudentScores\MaintainStudentScores\bin\Debug\MaintainStudentScores.exe.config
+i:\documentswin8\visual studio 2017\Projects\MaintainStudentScores\MaintainStudentScores\bin\Debug\MaintainStudentScores.exe
+i:\documentswin8\visual studio 2017\Projects\MaintainStudentScores\MaintainStudentScores\bin\Debug\MaintainStudentScores.pdb
+i:\documentswin8\visual studio 2017\Projects\MaintainStudentScores\MaintainStudentScores\obj\Debug\MaintainStudentScores.csprojResolveAssemblyReference.cache
+i:\documentswin8\visual studio 2017\Projects\MaintainStudentScores\MaintainStudentScores\obj\Debug\MaintainStudentScores.frmAddNewStudent.resources
+i:\documentswin8\visual studio 2017\Projects\MaintainStudentScores\MaintainStudentScores\obj\Debug\MaintainStudentScores.frmAddScore.resources
+i:\documentswin8\visual studio 2017\Projects\MaintainStudentScores\MaintainStudentScores\obj\Debug\MaintainStudentScores.frmStudentScores.resources
+i:\documentswin8\visual studio 2017\Projects\MaintainStudentScores\MaintainStudentScores\obj\Debug\MaintainStudentScores.Properties.Resources.resources
+i:\documentswin8\visual studio 2017\Projects\MaintainStudentScores\MaintainStudentScores\obj\Debug\MaintainStudentScores.frmUpdateScore.resources
+i:\documentswin8\visual studio 2017\Projects\MaintainStudentScores\MaintainStudentScores\obj\Debug\MaintainStudentScores.frmUpdateStudentScores.resources
+i:\documentswin8\visual studio 2017\Projects\MaintainStudentScores\MaintainStudentScores\obj\Debug\MaintainStudentScores.csproj.GenerateResource.Cache
+i:\documentswin8\visual studio 2017\Projects\MaintainStudentScores\MaintainStudentScores\obj\Debug\MaintainStudentScores.exe
+i:\documentswin8\visual studio 2017\Projects\MaintainStudentScores\MaintainStudentScores\obj\Debug\MaintainStudentScores.pdb
