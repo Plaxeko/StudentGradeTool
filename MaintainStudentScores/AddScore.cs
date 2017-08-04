@@ -10,26 +10,20 @@ using System.Windows.Forms;
 
 namespace MaintainStudentScores
 {
-    public partial class frmUpdateScore : Form
+    public partial class frmAddScore : Form
     {
-        public frmUpdateScore()
+        public frmAddScore()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
+        private void btnAdd_Click(object sender, EventArgs e)
         {
             try
             {
                 if (Int32.Parse(txtScore.Text) >= 0 && Int32.Parse(txtScore.Text) <= 100)
                 {
-                    frmUpdateStudentScores.chgStudents.Values.ElementAt(frmStudentScore.selected)[frmUpdateStudentScores.selected]
-                            = Int32.Parse(txtScore.Text);
+                    frmUpdateStudentScores.chgStudents.Values.ElementAt(frmStudentScores.selected).Add(Int32.Parse(txtScore.Text));
                     this.Close();
                 }
                 else

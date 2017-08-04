@@ -1,9 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26430.14
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaintainStudentScores", "MaintainStudentScores\MaintainStudentScores.csproj", "{FE25A23A-FF9A-4B02-81E1-1F48F5C5A1E3}"
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaintainStudentScores", "MaintainStudentScores\MaintainStudentScores.csproj", "{C38F4D4B-17A2-48DB-9697-59AFF0ADC6FA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +9,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FE25A23A-FF9A-4B02-81E1-1F48F5C5A1E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FE25A23A-FF9A-4B02-81E1-1F48F5C5A1E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FE25A23A-FF9A-4B02-81E1-1F48F5C5A1E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FE25A23A-FF9A-4B02-81E1-1F48F5C5A1E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C38F4D4B-17A2-48DB-9697-59AFF0ADC6FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C38F4D4B-17A2-48DB-9697-59AFF0ADC6FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C38F4D4B-17A2-48DB-9697-59AFF0ADC6FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C38F4D4B-17A2-48DB-9697-59AFF0ADC6FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

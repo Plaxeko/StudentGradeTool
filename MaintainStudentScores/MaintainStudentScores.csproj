@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FE25A23A-FF9A-4B02-81E1-1F48F5C5A1E3}</ProjectGuid>
+    <ProjectGuid>{C38F4D4B-17A2-48DB-9697-59AFF0ADC6FA}</ProjectGuid>
     <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MaintainStudentScores</RootNamespace>
     <AssemblyName>MaintainStudentScores</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -40,55 +40,51 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
-    <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddScore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddScore.Designer.cs">
+      <DependentUpon>AddScore.cs</DependentUpon>
+    </Compile>
     <Compile Include="ErrorStudent.cs" />
-    <Compile Include="frmAddNewStudent.cs">
+    <Compile Include="StudentScores.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAddNewStudent.Designer.cs">
-      <DependentUpon>frmAddNewStudent.cs</DependentUpon>
+    <Compile Include="StudentScores.Designer.cs">
+      <DependentUpon>StudentScores.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAddScore.cs">
+    <Compile Include="AddNewStudent.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAddScore.Designer.cs">
-      <DependentUpon>frmAddScore.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmStudentScore.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmStudentScore.Designer.cs">
-      <DependentUpon>frmStudentScore.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmUpdateScore.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmUpdateScore.Designer.cs">
-      <DependentUpon>frmUpdateScore.cs</DependentUpon>
+    <Compile Include="AddNewStudent.Designer.cs">
+      <DependentUpon>AddNewStudent.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="frmUpdateStudentScores.cs">
+    <Compile Include="UpdateScore.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmUpdateStudentScores.Designer.cs">
-      <DependentUpon>frmUpdateStudentScores.cs</DependentUpon>
+    <Compile Include="UpdateScore.Designer.cs">
+      <DependentUpon>UpdateScore.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="frmAddNewStudent.resx">
-      <DependentUpon>frmAddNewStudent.cs</DependentUpon>
+    <Compile Include="UpdateStudentScores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateStudentScores.Designer.cs">
+      <DependentUpon>UpdateStudentScores.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddNewStudent.resx">
+      <DependentUpon>AddNewStudent.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAddScore.resx">
-      <DependentUpon>frmAddScore.cs</DependentUpon>
+    <EmbeddedResource Include="AddScore.resx">
+      <DependentUpon>AddScore.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmStudentScore.resx">
-      <DependentUpon>frmStudentScore.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmUpdateScore.resx">
-      <DependentUpon>frmUpdateScore.cs</DependentUpon>
+    <EmbeddedResource Include="StudentScores.resx">
+      <DependentUpon>StudentScores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -99,8 +95,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="frmUpdateStudentScores.resx">
-      <DependentUpon>frmUpdateStudentScores.cs</DependentUpon>
+    <EmbeddedResource Include="UpdateScore.resx">
+      <DependentUpon>UpdateScore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateStudentScores.resx">
+      <DependentUpon>UpdateStudentScores.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -116,4 +115,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
 </Project>

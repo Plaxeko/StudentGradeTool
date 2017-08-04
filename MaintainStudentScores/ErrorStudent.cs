@@ -6,15 +6,7 @@ using System.Threading.Tasks;
 
 namespace MaintainStudentScores
 {
-    public class ErrorStudent : Exception
+    class ErrorStudent
     {
-        public string studentstring;
-
-        public ErrorStudent(string message) : base(message)
-        {
-            studentstring = message;
-        }
-
-        
     }
 }

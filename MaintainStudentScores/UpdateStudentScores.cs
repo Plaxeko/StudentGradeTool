@@ -23,8 +23,8 @@ namespace MaintainStudentScores
 
         private void frmUpdateStudentScores_Activated(object sender, EventArgs e)
         {
-            txtName.Text = chgStudents.Keys.ElementAt(frmStudentScore.selected);
-            bs.DataSource = chgStudents.Values.ElementAt(frmStudentScore.selected);
+            txtName.Text = chgStudents.Keys.ElementAt(frmStudentScores.selected);
+            bs.DataSource = chgStudents.Values.ElementAt(frmStudentScores.selected);
             lbxScores.DataSource = bs;
         }
 
@@ -37,8 +37,8 @@ namespace MaintainStudentScores
 
         private void btnOk_Click(object sender, EventArgs e)
         {
-            frmStudentScore.students = chgStudents;
-            this.Close();
+            frmStudentScores.students = chgStudents;
+            this.Close();            
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
@@ -51,19 +51,19 @@ namespace MaintainStudentScores
 
         private void btnRemove_Click(object sender, EventArgs e)
         {
-            chgStudents.Values.ElementAt(frmStudentScore.selected).RemoveAt(lbxScores.SelectedIndex);
+            chgStudents.Values.ElementAt(frmStudentScores.selected).RemoveAt(lbxScores.SelectedIndex);
             bs.ResetBindings(false);
         }
 
         private void frmUpdateStudentScores_Load(object sender, EventArgs e)
         {
-            chgStudents = frmStudentScore.students.ToDictionary(p => p.Key, p => p.Value.ToList());
+            chgStudents = frmStudentScores.students.ToDictionary(p => p.Key, p => p.Value.ToList());
         }
 
         private void btnClearScores_Click(object sender, EventArgs e)
         {
-            chgStudents.Values.ElementAt(frmStudentScore.selected).RemoveRange(
-                0, chgStudents.Values.ElementAt(frmStudentScore.selected).Count);
+            chgStudents.Values.ElementAt(frmStudentScores.selected).RemoveRange(
+                0, chgStudents.Values.ElementAt(frmStudentScores.selected).Count);
             bs.ResetBindings(false);
         }
 

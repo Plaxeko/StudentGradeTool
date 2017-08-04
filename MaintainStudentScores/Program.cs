@@ -16,7 +16,7 @@ namespace MaintainStudentScores
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmStudentScore());
+            Application.Run(new frmStudentScores());
         }
     }
 }
