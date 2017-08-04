@@ -65,7 +65,7 @@
             this.lbxScores.Name = "lbxScores";
             this.lbxScores.Size = new System.Drawing.Size(112, 134);
             this.lbxScores.TabIndex = 0;
-            this.lbxScores.SelectedIndexChanged += new System.EventHandler(this.lbxScores_SelectedIndexChanged);
+          
             // 
             // btnAdd
             // 

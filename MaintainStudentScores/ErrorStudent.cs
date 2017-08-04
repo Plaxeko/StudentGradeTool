@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace MaintainStudentScores
 {
-    class ErrorStudent
+    class ErrorStudent : Exception
     {
+        //    public string studentstring;
+        //    public robotexception(string message)
+        //    : base(message)
+        //{
+        //        stduenttstring = message;
+        //    }
+        
     }
 }

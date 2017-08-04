@@ -34,12 +34,12 @@ namespace MaintainStudentScores
                 }
                 else
                 {
-                    MessageBox.Show("Please enter a score between 0 and 100.", "Invalid score");
+                    MessageBox.Show("Enter a score between 0 and 100.");
                 }
             }
             catch (FormatException)
             {
-                MessageBox.Show("Please enter a valid number", "Invalid Entry");
+                MessageBox.Show("Enter a valid number");
             }
         }
     }

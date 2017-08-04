@@ -35,8 +35,10 @@ namespace MaintainStudentScores
             foreach (KeyValuePair<string, List<int>> student in students)
             {
                 StringBuilder sb = new StringBuilder();
+
                 sb.Append(student.Key.ToString());
-                sb.Append(" - ");
+                sb.Append(": (");
+
                 for (int i = 0; i < student.Value.Count; i++)
                 {
                     sb.Append(student.Value[i]);
@@ -45,8 +47,9 @@ namespace MaintainStudentScores
                         sb.Append(", ");
                     }
                 }
-                lbxStudents.Items.Add(sb);
-                lbxStudents.SetSelected(0, true);
+
+                lbxStudents.Items.Add(sb + ")");
+                //lbxStudents.SetSelected(0, true);
                 UpdateInfo();
             }
         }
@@ -56,15 +59,15 @@ namespace MaintainStudentScores
             try
             {
 
-                txtScoreTotal.Text = students.Values.ElementAt(lbxStudents.SelectedIndex).Sum().ToString();
-                txtScoreCount.Text = students.Values.ElementAt(lbxStudents.SelectedIndex).Count.ToString();
-                txtAverage.Text = Math.Round(students.Values.ElementAt(lbxStudents.SelectedIndex).Average()).ToString();
+                txtTotal.Text = students.Values.ElementAt(lbxStudents.SelectedIndex).Sum().ToString();
+                txtCount.Text = students.Values.ElementAt(lbxStudents.SelectedIndex).Count.ToString();
+                txtAvg.Text = Math.Round(students.Values.ElementAt(lbxStudents.SelectedIndex).Average()).ToString();
             }
             catch (Exception)
             {
-                txtScoreTotal.Text = "";
-                txtScoreCount.Text = "";
-                txtAverage.Text = "";
+                txtTotal.Text = "";
+                txtCount.Text = "";
+                txtAvg.Text = "";
             }
         }
 
@@ -88,16 +91,13 @@ namespace MaintainStudentScores
             AddBox();
             if (students.Count == 0)
             {
-                txtScoreTotal.Text = "";
-                txtScoreCount.Text = "";
-                txtAverage.Text = "";
+                txtTotal.Text = "";
+                txtCount.Text = "";
+                txtAvg.Text = "";
             }
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+       
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
@@ -109,6 +109,11 @@ namespace MaintainStudentScores
             }
             lbxStudents.Items.Clear();
             AddBox();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
         private void frmStudentScores_Activated(object sender, EventArgs e)

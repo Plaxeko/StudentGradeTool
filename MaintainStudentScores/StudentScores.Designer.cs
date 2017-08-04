@@ -33,9 +33,9 @@
             this.btnAddNew = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
-            this.txtScoreTotal = new System.Windows.Forms.TextBox();
-            this.txtScoreCount = new System.Windows.Forms.TextBox();
-            this.txtAverage = new System.Windows.Forms.TextBox();
+            this.txtTotal = new System.Windows.Forms.TextBox();
+            this.txtCount = new System.Windows.Forms.TextBox();
+            this.txtAvg = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -47,7 +47,7 @@
             this.lbxStudents.FormattingEnabled = true;
             this.lbxStudents.Location = new System.Drawing.Point(12, 34);
             this.lbxStudents.Name = "lbxStudents";
-            this.lbxStudents.Size = new System.Drawing.Size(222, 121);
+            this.lbxStudents.Size = new System.Drawing.Size(229, 173);
             this.lbxStudents.TabIndex = 0;
             this.lbxStudents.Click += new System.EventHandler(this.lbxStudents_Click);
             // 
@@ -66,7 +66,7 @@
             this.btnAddNew.Name = "btnAddNew";
             this.btnAddNew.Size = new System.Drawing.Size(75, 23);
             this.btnAddNew.TabIndex = 1;
-            this.btnAddNew.Text = "Add New...";
+            this.btnAddNew.Text = "Add New";
             this.btnAddNew.UseVisualStyleBackColor = true;
             this.btnAddNew.Click += new System.EventHandler(this.btnAddNew_Click);
             // 
@@ -76,7 +76,7 @@
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 23);
             this.btnUpdate.TabIndex = 2;
-            this.btnUpdate.Text = "Update...";
+            this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
@@ -90,37 +90,37 @@
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
-            // txtScoreTotal
+            // txtTotal
             // 
-            this.txtScoreTotal.Location = new System.Drawing.Point(188, 170);
-            this.txtScoreTotal.Name = "txtScoreTotal";
-            this.txtScoreTotal.ReadOnly = true;
-            this.txtScoreTotal.Size = new System.Drawing.Size(46, 20);
-            this.txtScoreTotal.TabIndex = 3;
-            this.txtScoreTotal.TabStop = false;
+            this.txtTotal.Location = new System.Drawing.Point(195, 218);
+            this.txtTotal.Name = "txtTotal";
+            this.txtTotal.ReadOnly = true;
+            this.txtTotal.Size = new System.Drawing.Size(46, 20);
+            this.txtTotal.TabIndex = 3;
+            this.txtTotal.TabStop = false;
             // 
-            // txtScoreCount
+            // txtCount
             // 
-            this.txtScoreCount.Location = new System.Drawing.Point(188, 196);
-            this.txtScoreCount.Name = "txtScoreCount";
-            this.txtScoreCount.ReadOnly = true;
-            this.txtScoreCount.Size = new System.Drawing.Size(46, 20);
-            this.txtScoreCount.TabIndex = 3;
-            this.txtScoreCount.TabStop = false;
+            this.txtCount.Location = new System.Drawing.Point(195, 256);
+            this.txtCount.Name = "txtCount";
+            this.txtCount.ReadOnly = true;
+            this.txtCount.Size = new System.Drawing.Size(46, 20);
+            this.txtCount.TabIndex = 3;
+            this.txtCount.TabStop = false;
             // 
-            // txtAverage
+            // txtAvg
             // 
-            this.txtAverage.Location = new System.Drawing.Point(189, 222);
-            this.txtAverage.Name = "txtAverage";
-            this.txtAverage.ReadOnly = true;
-            this.txtAverage.Size = new System.Drawing.Size(46, 20);
-            this.txtAverage.TabIndex = 3;
-            this.txtAverage.TabStop = false;
+            this.txtAvg.Location = new System.Drawing.Point(195, 297);
+            this.txtAvg.Name = "txtAvg";
+            this.txtAvg.ReadOnly = true;
+            this.txtAvg.Size = new System.Drawing.Size(46, 20);
+            this.txtAvg.TabIndex = 3;
+            this.txtAvg.TabStop = false;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(121, 173);
+            this.label2.Location = new System.Drawing.Point(121, 223);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(61, 13);
             this.label2.TabIndex = 4;
@@ -129,7 +129,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(114, 199);
+            this.label3.Location = new System.Drawing.Point(121, 259);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(68, 13);
             this.label3.TabIndex = 5;
@@ -138,7 +138,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(132, 225);
+            this.label4.Location = new System.Drawing.Point(132, 300);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(50, 13);
             this.label4.TabIndex = 6;
@@ -147,7 +147,7 @@
             // btnExit
             // 
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnExit.Location = new System.Drawing.Point(250, 218);
+            this.btnExit.Location = new System.Drawing.Point(261, 295);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
             this.btnExit.TabIndex = 4;
@@ -160,14 +160,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnExit;
-            this.ClientSize = new System.Drawing.Size(344, 257);
+            this.ClientSize = new System.Drawing.Size(362, 346);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtAverage);
-            this.Controls.Add(this.txtScoreCount);
-            this.Controls.Add(this.txtScoreTotal);
+            this.Controls.Add(this.txtAvg);
+            this.Controls.Add(this.txtCount);
+            this.Controls.Add(this.txtTotal);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnAddNew);
@@ -190,9 +190,9 @@
         private System.Windows.Forms.Button btnAddNew;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.TextBox txtScoreTotal;
-        private System.Windows.Forms.TextBox txtScoreCount;
-        private System.Windows.Forms.TextBox txtAverage;
+        private System.Windows.Forms.TextBox txtTotal;
+        private System.Windows.Forms.TextBox txtCount;
+        private System.Windows.Forms.TextBox txtAvg;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;

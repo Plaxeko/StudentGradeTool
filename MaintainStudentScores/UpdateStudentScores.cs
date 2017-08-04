@@ -35,11 +35,7 @@ namespace MaintainStudentScores
             bs.ResetBindings(false);
         }
 
-        private void btnOk_Click(object sender, EventArgs e)
-        {
-            frmStudentScores.students = chgStudents;
-            this.Close();            
-        }
+        
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
@@ -47,6 +43,12 @@ namespace MaintainStudentScores
             Form updateScore = new frmUpdateScore();
             updateScore.ShowDialog();
             bs.ResetBindings(false);
+        }
+
+        private void btnOk_Click(object sender, EventArgs e)
+        {
+            frmStudentScores.students = chgStudents;
+            this.Close();
         }
 
         private void btnRemove_Click(object sender, EventArgs e)
@@ -67,9 +69,6 @@ namespace MaintainStudentScores
             bs.ResetBindings(false);
         }
 
-        private void lbxScores_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }
