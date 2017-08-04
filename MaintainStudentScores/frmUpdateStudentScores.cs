@@ -12,31 +12,64 @@ namespace MaintainStudentScores
 {
     public partial class frmUpdateStudentScores : Form
     {
+        public static Dictionary<string, List<int>> chgStudents;
+        BindingSource bs = new BindingSource();
+        public static int selected;
+
         public frmUpdateStudentScores()
         {
             InitializeComponent();
         }
 
+        private void frmUpdateStudentScores_Activated(object sender, EventArgs e)
+        {
+            txtName.Text = chgStudents.Keys.ElementAt(frmStudentScore.selected);
+            bs.DataSource = chgStudents.Values.ElementAt(frmStudentScore.selected);
+            lbxScores.DataSource = bs;
+        }
+
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            frmAddScore addScore = new frmAddScore();
+            Form addScore = new frmAddScore();
             addScore.ShowDialog();
+            bs.ResetBindings(false);
+        }
+
+        private void btnOk_Click(object sender, EventArgs e)
+        {
+            frmStudentScore.students = chgStudents;
+            this.Close();
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            frmUpdateScore updateScore = new frmUpdateScore();
+            selected = lbxScores.SelectedIndex;
+            Form updateScore = new frmUpdateScore();
             updateScore.ShowDialog();
+            bs.ResetBindings(false);
         }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void btnRemove_Click(object sender, EventArgs e)
         {
-
+            chgStudents.Values.ElementAt(frmStudentScore.selected).RemoveAt(lbxScores.SelectedIndex);
+            bs.ResetBindings(false);
         }
 
-        private void btnCancel_Click(object sender, EventArgs e)
+        private void frmUpdateStudentScores_Load(object sender, EventArgs e)
         {
-            this.Close();
+            chgStudents = frmStudentScore.students.ToDictionary(p => p.Key, p => p.Value.ToList());
+        }
+
+        private void btnClearScores_Click(object sender, EventArgs e)
+        {
+            chgStudents.Values.ElementAt(frmStudentScore.selected).RemoveRange(
+                0, chgStudents.Values.ElementAt(frmStudentScore.selected).Count);
+            bs.ResetBindings(false);
+        }
+
+        private void lbxScores_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

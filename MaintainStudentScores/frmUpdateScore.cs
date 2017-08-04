@@ -21,5 +21,26 @@ namespace MaintainStudentScores
         {
             this.Close();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (Int32.Parse(txtScore.Text) >= 0 && Int32.Parse(txtScore.Text) <= 100)
+                {
+                    frmUpdateStudentScores.chgStudents.Values.ElementAt(frmStudentScore.selected)[frmUpdateStudentScores.selected]
+                            = Int32.Parse(txtScore.Text);
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Please enter a score between 0 and 100.", "Invalid score");
+                }
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Please enter a valid number", "Invalid Entry");
+            }
+        }
     }
 }

@@ -31,7 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lbxScores = new System.Windows.Forms.ListBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnRemove = new System.Windows.Forms.Button();
@@ -65,15 +65,16 @@
             this.lbxScores.Name = "lbxScores";
             this.lbxScores.Size = new System.Drawing.Size(120, 95);
             this.lbxScores.TabIndex = 2;
-            this.lbxScores.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            //this.lbxScores.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
-            // textBox1
+            // txtName
             // 
-            this.textBox1.Location = new System.Drawing.Point(72, 21);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(214, 20);
-            this.textBox1.TabIndex = 3;
+            this.txtName.Location = new System.Drawing.Point(72, 21);
+            this.txtName.Name = "txtName";
+            this.txtName.ReadOnly = true;
+            this.txtName.Size = new System.Drawing.Size(214, 20);
+            this.txtName.TabIndex = 3;
+            //this.txtName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // btnAdd
             // 
@@ -103,6 +104,7 @@
             this.btnRemove.TabIndex = 6;
             this.btnRemove.Text = "Remove";
             this.btnRemove.UseVisualStyleBackColor = true;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // btnClearScores
             // 
@@ -112,6 +114,7 @@
             this.btnClearScores.TabIndex = 7;
             this.btnClearScores.Text = "Clear Scores";
             this.btnClearScores.UseVisualStyleBackColor = true;
+            this.btnClearScores.Click += new System.EventHandler(this.btnClearScores_Click);
             // 
             // btnOk
             // 
@@ -121,6 +124,7 @@
             this.btnOk.TabIndex = 8;
             this.btnOk.Text = "Ok";
             this.btnOk.UseVisualStyleBackColor = true;
+            this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
             // 
             // btnCancel
             // 
@@ -130,7 +134,7 @@
             this.btnCancel.TabIndex = 9;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+           // this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // frmUpdateStudentScores
             // 
@@ -143,12 +147,13 @@
             this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtName);
             this.Controls.Add(this.lbxScores);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "frmUpdateStudentScores";
             this.Text = "Student Scores";
+            this.Load += new System.EventHandler(this.frmUpdateStudentScores_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -159,7 +164,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ListBox lbxScores;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnRemove;
