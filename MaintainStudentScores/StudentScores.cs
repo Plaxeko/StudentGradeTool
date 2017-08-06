@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace MaintainStudentScores
 {
@@ -22,13 +23,35 @@ namespace MaintainStudentScores
 
         private void frmStudentScores_Load(object sender, EventArgs e)
         {
-            students.Add("Todd Howard", new List<int> { 85, 92, 89, 88 });
-            students.Add("John Carmack", new List<int> { 92, 100, 87, 72 });
-
+            //students.Add("Todd Howard", new List<int> { 85, 92, 89, 88 });
+            //students.Add("John Carmack", new List<int> { 92, 100, 87, 72 });
+            //students.Add("Hiro Protagonist", new List<int> { 77, 90, 87, 22 });
             AddBox();
+            PopulateList(); 
 
-            // TODO select first in listbox on load
+            
+          
         }
+
+        private void PopulateList()
+        {
+            System.IO.Directory.CreateDirectory("C:\\C#.NET\\Files"); //Create directory if it doesnt exist.
+            const string sPath = "C:\\C#.NET\\Files\\StudentScores.txt"; //takes care of creating StudentScores.txt
+
+
+
+
+            System.IO.StreamWriter SaveFile = new System.IO.StreamWriter(sPath);
+            foreach (var item in lbxStudents.Items)
+            {
+                // AddBox();
+                SaveFile.WriteLine(item);
+
+            }
+            SaveFile.Close();
+        }
+
+
 
         private void AddBox()
         {
@@ -50,7 +73,9 @@ namespace MaintainStudentScores
 
                 lbxStudents.Items.Add(sb + ")");
                 //lbxStudents.SetSelected(0, true);
+                PopulateList();
                 UpdateInfo();
+                
             }
         }
 

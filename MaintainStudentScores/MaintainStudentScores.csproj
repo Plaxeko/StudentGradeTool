@@ -51,6 +51,7 @@
       <DependentUpon>AddScore.cs</DependentUpon>
     </Compile>
     <Compile Include="ErrorStudent.cs" />
+    <Compile Include="StudentDB.cs" />
     <Compile Include="StudentScores.cs">
       <SubType>Form</SubType>
     </Compile>
